@@ -1,0 +1,22 @@
+[project]
+name = example
+board = basys3
+
+[module]
+name = add3_top
+
+[port]
+clk          : input  : 1
+rst_n        : input  : 1
+# 激活输入：3 路，每路 8 位（int8）
+act_in_0     : input  : 8
+act_in_1     : input  : 8
+act_in_2     : input  : 8
+# 权重输入：3 路，每路 8 位（int8）
+wgt_in_0     : input  : 8
+wgt_in_1     : input  : 8
+wgt_in_2     : input  : 8
+# 部分和输出：3 路，每路 32 位（累加结果，防止溢出）
+psum_out_0   : output : 32
+psum_out_1   : output : 32
+psum_out_2   : output : 32

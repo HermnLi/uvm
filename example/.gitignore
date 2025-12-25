@@ -1,0 +1,10 @@
+/build/
+/tb/sim/
+.vscode/
+*.swp
+*~
+.vivado*
+*.log
+*.jou
+*.str
+xsim.dir/
